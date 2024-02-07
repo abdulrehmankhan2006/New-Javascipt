@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="Data show">
+<input type="text" id="cal">
+<input type="text" id="cal2">
+
+<input type="text" id="opr">
+</div>
+
+    <input type="button" value="" onclick="show(cal,cal2)">
+
+
+    <script>
+        let cal = document.getElementById("#cal")
+        let cal2 = document.getElementById("#cal2")
+        let opr = document.getElementById("#opr")
+        let dShow = document.getElementById("#Data")
+    
+        switch(opr){
+            case "+":
+            function show(cal,cal2) {
+                return dShow.innerHTML(cal+cal2)
+            }
+            break;
+
+            default:
+            break;
+}
+
+    </script>
+</body>
+</html>
